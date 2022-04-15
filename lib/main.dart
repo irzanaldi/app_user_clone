@@ -361,7 +361,7 @@ class ChartMusicList extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Chart Music List',
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
