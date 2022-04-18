@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
       body: Container(
         color: Colors.black,
         child: ListView(
-          children: [
+          children: const [
             SizedBox(height: 16.0),
             MyAppBar(),
             SizedBox(height: 16.0),
@@ -223,11 +223,11 @@ class MenuList extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Column(
-            children: [
+            children: const [
               Icon(
                 FontAwesomeIcons.addressBook,
                 color: Colors.yellow,
-                size: 40.0,
+                size: 35.0,
               ),
               SizedBox(
                 height: 10.0,
@@ -239,11 +239,11 @@ class MenuList extends StatelessWidget {
             ],
           ),
           Column(
-            children: [
+            children: const [
               Icon(
                 FontAwesomeIcons.moneyBill,
                 color: Colors.yellow,
-                size: 40.0,
+                size: 35.0,
               ),
               SizedBox(
                 height: 10.0,
@@ -256,11 +256,11 @@ class MenuList extends StatelessWidget {
             ],
           ),
           Column(
-            children: [
+            children: const [
               Icon(
                 FontAwesomeIcons.motorcycle,
                 color: Colors.yellow,
-                size: 40.0,
+                size: 35.0,
               ),
               SizedBox(
                 height: 10.0,
@@ -272,11 +272,11 @@ class MenuList extends StatelessWidget {
             ],
           ),
           Column(
-            children: [
+            children: const [
               Icon(
                 FontAwesomeIcons.shoppingBag,
                 color: Colors.yellow,
-                size: 40.0,
+                size: 35.0,
               ),
               SizedBox(
                 height: 10.0,
@@ -299,21 +299,21 @@ class ChartMusic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.only(bottom: 10.0),
+        padding: const EdgeInsets.only(bottom: 10.0),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                       image: NetworkImage(
                           'https://upload.wikimedia.org/wikipedia/id/4/45/Divide_cover.png'),
                       fit: BoxFit.cover)),
               height: 100.0,
               width: 100.0,
             ),
-            SizedBox(
+            const SizedBox(
               width: 16.0,
             ),
             Container(
@@ -321,17 +321,17 @@ class ChartMusic extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    SizedBox(
+                    const SizedBox(
                       height: 8.0,
                     ),
-                    Text(
+                    const Text(
                       'Nama Band',
                       style: TextStyle(
                           fontWeight: FontWeight.w600, color: Colors.white),
                     ),
                     Container(
                         width: 200.0,
-                        child: Text('Judul',
+                        child: const Text('Judul',
                             style: TextStyle(color: Colors.white30))),
                   ],
                 ),
@@ -348,7 +348,7 @@ class ChartMusicList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Column(
         // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -357,7 +357,8 @@ class ChartMusicList extends StatelessWidget {
                 color: Color(0xff696564),
                 borderRadius: BorderRadius.circular(10.0)),
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -365,19 +366,19 @@ class ChartMusicList extends StatelessWidget {
                     'Chart Music List',
                     style: TextStyle(fontSize: 20, color: Colors.white),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 15.0,
                   ),
-                  ChartMusic(),
-                  ChartMusic(),
-                  ChartMusic(),
-                  ChartMusic(),
-                  ChartMusic(),
+                  const ChartMusic(),
+                  const ChartMusic(),
+                  const ChartMusic(),
+                  const ChartMusic(),
+                  const ChartMusic(),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
-                        children: [
+                        children: const [
                           Icon(
                             FontAwesomeIcons.delicious,
                             size: 35,
@@ -389,7 +390,7 @@ class ChartMusicList extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        children: [
+                        children: const [
                           Icon(
                             FontAwesomeIcons.delicious,
                             size: 35,
